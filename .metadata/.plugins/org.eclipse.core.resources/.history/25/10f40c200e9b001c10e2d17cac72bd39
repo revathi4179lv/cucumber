@@ -1,0 +1,19 @@
+package com.adactin.runner;
+
+import org.openqa.selenium.WebDriver;
+
+public class Test_Runner {
+	public static WebDriver driver;
+	
+	public static void set_up() {
+		
+		driver=
+	}
+	
+	
+	public static void tear_Down() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

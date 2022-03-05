@@ -1,0 +1,15 @@
+package com.adactin.runner;
+
+public class Test_Runner {
+	public static 
+	
+	public static void set_up() {
+		// TODO Auto-generated method stub
+
+	}
+	public static void tear_Down() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

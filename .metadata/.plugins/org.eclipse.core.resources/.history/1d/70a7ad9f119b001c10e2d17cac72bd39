@@ -1,0 +1,177 @@
+package com.stepdefinition;
+
+import com.Maven_project.BaseClass;
+import com.properties.File_Reader_Manager;
+import com.spd.POManager_adactin;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class stepDefinition extends BaseClass {
+	public static POManager_adactin pom=new POManager_adactin(driver);
+	
+	@Given("^user Enter The Url$")
+	public void user_Enter_The_Url() throws Throwable {
+		
+		getUrl("http://adactinhotelapp.com/index.php");
+	    
+	}
+
+	@When("^user Enter The Username In Username Field$")
+	public void user_Enter_The_Username_In_Username_Field() throws Throwable {
+		
+		String username = File_Reader_Manager.getInstanceFRM().getInstanceCr().getUsername();
+		sendKeysMethod(pom.getInstancelog().getUsername(), username);
+	    
+	}
+
+	@When("^user Enter The Password In The Password Field$")
+	public void user_Enter_The_Password_In_The_Password_Field() throws Throwable {
+		
+		String password = File_Reader_Manager.getInstanceFRM().getInstanceCr().getPassword();
+		sendKeysMethod(pom.getInstancelog().getPassword(), password);
+	    
+	}
+
+	@Then("^Click The Login And Navigates To Search Hotel Page$")
+	public void click_The_Login_And_Navigates_To_Search_Hotel_Page() throws Throwable {
+	    
+		clickMethod(pom.getInstancelog().getClick());
+		
+	}
+
+	@When("^user select the Loction In the Location Field$")
+	public void user_select_the_Loction_In_the_Location_Field() throws Throwable {
+	    
+		String location = File_Reader_Manager.getInstanceFRM().getInstanceCr().getLocation();
+		dropDownSelectMethod(pom.getInstancesh().getLocation(), "value", location);
+		
+	}
+
+	@When("^User Select The Hotels In The Hotel Field$")
+	public void user_Select_The_Hotels_In_The_Hotel_Field() throws Throwable {
+	   
+		String hotel = File_Reader_Manager.getInstanceFRM().getInstanceCr().getHotel();
+		dropDownSelectMethod(pom.getInstancesh().getHotel(), "value", hotel);
+		
+	}
+
+	@When("^User Select The RoomType In Roomtype Field$")
+	public void user_Select_The_RoomType_In_Roomtype_Field() throws Throwable {
+		
+		String room = File_Reader_Manager.getInstanceFRM().getInstanceCr().getroom();
+		dropDownSelectMethod(pom.getInstancesh().getRoom(), "value", room);
+		
+	}
+
+	
+	@When("^User Select The No of Room In This Field$")
+	public void user_Select_The_No_of_Room_In_This_Field() throws Throwable {
+		
+		String nos = File_Reader_Manager.getInstanceFRM().getInstanceCr().getnos();	
+		dropDownSelectMethod(pom.getInstancesh().getNos(), "value", nos);		
+		
+	}
+
+		
+	@When("^user Select The Adult Per Room In AdaultperRoom Field$")
+	public void user_Select_The_Adult_Per_Room_In_AdaultperRoom_Field() throws Throwable {
+		
+		String adultroom = File_Reader_Manager.getInstanceFRM().getInstanceCr().getadultroom();
+		dropDownSelectMethod(pom.getInstancesh().getAdultroom(), "value", adultroom);
+	}
+	
+	@When("^user Select The Children Per Room In ChildrenPerRoom Field$")
+	public void user_Select_The_Children_Per_Room_In_ChildrenPerRoom_Field() throws Throwable {
+	  
+		String childroom = File_Reader_Manager.getInstanceFRM().getInstanceCr().getchildroom();
+		 dropDownSelectMethod(pom.getInstancesh().getChildroom(), "value", childroom);
+	}
+
+	@Then("^user Click The Search Button And Its Navigates To Select Hotel Page$")
+	public void user_Click_The_Search_Button_And_Its_Navigates_To_Select_Hotel_Page() throws Throwable {
+	    
+		clickMethod(pom.getInstancesh().getSubmit());
+		
+	}
+
+	@When("^User Click The Radio Button In The Select Field$")
+	public void user_Click_The_Radio_Button_In_The_Select_Field() throws Throwable {
+	    
+		clickMethod(pom.getInstancerc().getRadiobut());
+		
+	}
+
+	@Then("^User Click The Continue Button And Navigates To Book A Hotel Page$")
+	public void user_Click_The_Continue_Button_And_Navigates_To_Book_A_Hotel_Page() throws Throwable {
+	    
+		clickMethod(pom.getInstancerc().getConti());
+		
+	}
+
+	@When("^user Must Enter The FirstName In The Name Field$")
+	public void user_Must_Enter_The_FirstName_In_The_Name_Field() throws Throwable {
+	    
+		
+		
+	}
+
+	@When("^user Must Enter The LastName In The LastName Field$")
+	public void user_Must_Enter_The_LastName_In_The_LastName_Field() throws Throwable {
+	    
+		
+	}
+
+	@When("^User Must Enter The Billing Address In Address Field$")
+	public void user_Must_Enter_The_Billing_Address_In_Address_Field() throws Throwable {
+	    
+		
+	}
+
+	@When("^User Must CreditCard Number In The CreditCard Field$")
+	public void user_Must_CreditCard_Number_In_The_CreditCard_Field() throws Throwable {
+	    
+		
+		
+	}
+
+	@When("^user Select CreditCard Type In The Creditcardtype Field$")
+	public void user_Select_CreditCard_Type_In_The_Creditcardtype_Field() throws Throwable {
+	    
+		
+		
+	}
+
+	@When("^user Select Year And Month In The ExpiryDate Field$")
+	public void user_Select_Year_And_Month_In_The_ExpiryDate_Field() throws Throwable {
+
+
+		
+		
+	}
+
+	@When("^user Enter cvvNumber In The Cvv Number Field$")
+	public void user_Enter_cvvNumber_In_The_Cvv_Number_Field() throws Throwable {
+	    
+		
+		
+	}
+
+	@Then("^User Click The Book Button And Navigates to Booking Confirmaion Page$")
+	public void user_Click_The_Book_Button_And_Navigates_to_Booking_Confirmaion_Page() throws Throwable {
+	    
+		
+		
+	}
+
+	@Then("^User Click The MyItinary In MyInTinary Button$")
+	public void user_Click_The_MyItinary_In_MyInTinary_Button() throws Throwable {
+	    
+		
+		
+	}
+
+
+
+}

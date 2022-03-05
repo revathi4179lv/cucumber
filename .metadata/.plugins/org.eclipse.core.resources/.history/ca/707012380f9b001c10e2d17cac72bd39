@@ -1,0 +1,22 @@
+package com.adactin.runner;
+
+import org.openqa.selenium.WebDriver;
+
+import com.Maven_project.BaseClass;
+
+public class Test_Runner {
+	public static WebDriver driver;
+	
+	public static void set_up() {
+		
+		driver=BaseClass.browserLaunch("chrome");
+	}
+	
+	
+	public static void tear_Down() {
+
+		BaseClass.closeTab();
+
+	}
+
+}

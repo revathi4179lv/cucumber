@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Test_runner" project="Maven_Cucumber_Project" tests="22" started="22" failures="0" errors="2" ignored="0">
+  <testsuite name="com.adactin.runner.Test_Runner" time="23.282">
+    <testsuite name="Feature: Booking The Hotel in Adactin Hotel App" time="23.282">
+      <testsuite name="Scenario: Login Functionality" time="11.759">
+        <testcase name="Given user Enter The Url" classname="Scenario: Login Functionality" time="0.281"/>
+        <testcase name="When user Enter The Username In Username Field" classname="Scenario: Login Functionality" time="0.146"/>
+        <testcase name="And user Enter The Password In The Password Field" classname="Scenario: Login Functionality" time="11.331"/>
+        <testcase name="Then Click The Login And Navigates To Search Hotel Page" classname="Scenario: Login Functionality" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Search Hotal Functionality" time="5.503">
+        <testcase name="When user select the Loction In the Location Field" classname="Scenario: Search Hotal Functionality" time="0.232"/>
+        <testcase name="And User Select The Hotels In The Hotel Field" classname="Scenario: Search Hotal Functionality" time="0.281"/>
+        <testcase name="And User Select The RoomType In Roomtype Field" classname="Scenario: Search Hotal Functionality" time="0.241"/>
+        <testcase name="And User Select The No of Room In This Field" classname="Scenario: Search Hotal Functionality" time="0.257"/>
+        <testcase name="And user Select The Adult Per Room In AdaultperRoom Field" classname="Scenario: Search Hotal Functionality" time="0.231"/>
+        <testcase name="And user Select The Children Per Room In ChildrenPerRoom Field" classname="Scenario: Search Hotal Functionality" time="4.261"/>
+        <testcase name="Then user Click The Search Button And Its Navigates To Select Hotel Page" classname="Scenario: Search Hotal Functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Select Hotel Functionality" time="2.732">
+        <testcase name="When User Click The Radio Button In The Select Field" classname="Scenario: Select Hotel Functionality" time="2.732"/>
+        <testcase name="Then User Click The Continue Button And Navigates To Book A Hotel Page" classname="Scenario: Select Hotel Functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Book The Hotel Functionality" time="2.094">
+        <testcase name="When user Must Enter The FirstName In The Name Field" classname="Scenario: Book The Hotel Functionality" time="0.808"/>
+        <testcase name="And user Must Enter The LastName In The LastName Field" classname="Scenario: Book The Hotel Functionality" time="0.162"/>
+        <testcase name="And User Must Enter The Billing Address In Address Field" classname="Scenario: Book The Hotel Functionality" time="0.128"/>
+        <testcase name="And User Must CreditCard Number In The CreditCard Field" classname="Scenario: Book The Hotel Functionality" time="0.275"/>
+        <testcase name="And user Select CreditCard Type In The Creditcardtype Field" classname="Scenario: Book The Hotel Functionality" time="0.482"/>
+        <testcase name="And user Select Year And Month In The ExpiryDate Field" classname="Scenario: Book The Hotel Functionality" time="0.136"/>
+        <testcase name="And user Enter cvvNumber In The Cvv Number Field" classname="Scenario: Book The Hotel Functionality" time="0.103"/>
+        <testcase name="Then User Click The Book Button And Navigates to Booking Confirmaion Page" classname="Scenario: Book The Hotel Functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Booking Confirmation Functionality" time="0.019" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#my_itinerary"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-U01S286', ip: '192.168.197.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54746}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32db4e72c605ddc4d68f7799d0fa53ac
+*** Element info: {Using=id, value=my_itinerary}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;
+	at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy16.click(Unknown Source)&#13;
+	at com.Maven_project.BaseClass.clickMethod(BaseClass.java:279)&#13;
+	at com.stepdefinition.stepDefinition.user_Click_The_MyItinary_In_MyInTinary_Button(stepDefinition.java:185)&#13;
+	at ✽.Then User Click The MyItinary In MyInTinary Button(adactin.feature:32)&#13;
+&#13;
+</error>
+        <testcase name="Then User Click The MyItinary In MyInTinary Button" classname="Scenario: Booking Confirmation Functionality" time="0.019">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#my_itinerary"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-U01S286', ip: '192.168.197.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54746}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32db4e72c605ddc4d68f7799d0fa53ac
+*** Element info: {Using=id, value=my_itinerary}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;
+	at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy16.click(Unknown Source)&#13;
+	at com.Maven_project.BaseClass.clickMethod(BaseClass.java:279)&#13;
+	at com.stepdefinition.stepDefinition.user_Click_The_MyItinary_In_MyInTinary_Button(stepDefinition.java:185)&#13;
+	at ✽.Then User Click The MyItinary In MyInTinary Button(adactin.feature:32)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,18 @@
+package com.array;
+
+public class arrayTask {
+	public static void main (String[] args) {  
+        int arr[] = {10,20,20,30,30,40,50,50};  
+        int length = arr.length;  
+        length = removeDuplicateElements(arr, length);  
+        //printing array elements  
+        for (int i=0; i<length; i++)  
+           System.out.print(arr[i]+" ");  
+    }
+
+	private static int removeDuplicateElements(int[] arr, int length) {
+		// TODO Auto-generated method stub
+		return 0;
+	}  
+
+}
